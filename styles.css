@@ -32,6 +32,15 @@ html,body {
 	font-weight: 700;
 }
 
+#logo a:link {
+	color: inherit;
+	text-decoration: none;
+}
+
+#logo a:visited {
+	color: inherit;
+}
+
 #navigation {
 	vertical-align: top;
 	padding-top: 25px;
@@ -58,9 +67,16 @@ html,body {
 }
 
 #content {
-	padding-bottom: 100px; /* Height of the footer element */
-	outline: 1px solid black;
+	padding-bottom: 300px; /* Height of the footer element */
+}
 
+
+#page-marker {
+	color: #3BAFDA;
+	padding-top: 20px;
+	font-size: 8px;
+	width: 70%;
+	margin: 0 auto;
 }
 
 #cta {
@@ -76,8 +92,8 @@ html,body {
 }
 
 #support {
+	padding-bottom: 20px;
 	margin: 0 auto;
-	padding: 20px;
 	color: white;
 	width: 70%;
 	text-align: justify;
@@ -85,10 +101,32 @@ html,body {
 }
 
 #footer { 
+	text-align: center;
 	width: 100%;
-	height: 100px;
+	height: 300px;
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	background: rgb(140,193,82);
+}
+
+.footer-sections {
+	color: rgb(100,138,42);
+	vertical-align: top;
+	padding-top: 20px;
+	text-align: left;
+	display: inline-block;
+	width: 200px;
+	height: 250px;
+}
+
+.footer-sections h1 {
+	font-size: 15px;
+}
+
+#bottom-footer {
+	padding: 1px;
+	color: rgb(140,193,82);
+	height: 50px;
+	background: rgb(100,138,42);
 }
