@@ -7,26 +7,34 @@ html,body {
 
 #wrapper {
 	min-height: 100%;
-	background: #EFEFEF;
+	background: #4FC1E9;
 	position: relative;
 }
 
 #header {
 	padding: 50px;
 	text-align: center;
-	background: #333333;
+	background: #3BAFDA;
 	color: white;
-	outline: 1px solid black;
+}
+
+#header img {
+	vertical-align: top;
+	padding-left: 40px;
+	width: 60px;
+	display: inline-block;
 }
 
 #logo {
+	vertical-align: top;
 	display: inline-block;
 	font-size: 30px;
 	font-weight: 700;
-	font-style: italic;
 }
 
 #navigation {
+	vertical-align: top;
+	padding-top: 25px;
 	display: inline-block;
 }
 
@@ -36,10 +44,44 @@ html,body {
 	display: inline;
 }
 
+#navigation li a:link {
+	color: inherit;
+	text-decoration: none;
+}
+
+#navigation li a:visited {
+	color: inherit;
+}
+
+#navigation li a:hover {
+	text-decoration: underline;
+}
+
 #content {
 	padding-bottom: 100px; /* Height of the footer element */
-	padding: 50px;
 	outline: 1px solid black;
+
+}
+
+#cta {
+	width: 100%;
+	height: 500px;
+	background: url("images/stringswithRaymond.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+#support h1 {
+	font-size: 20px;
+}
+
+#support {
+	margin: 0 auto;
+	padding: 20px;
+	color: white;
+	width: 70%;
+	text-align: justify;
+	line-height: 35px;
 }
 
 #footer { 
@@ -48,5 +90,5 @@ html,body {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	outline: 1px solid black;
+	background: rgb(140,193,82);
 }
