@@ -5,6 +5,14 @@ html,body {
 	font-family: "Open Sans";
 }
 
+body {
+	font-size: 62.5%;
+}
+
+::selection {
+	background-color: rgb(140,193,82);
+}
+
 #wrapper {
 	min-height: 100%;
 	background: #4FC1E9;
@@ -43,7 +51,7 @@ html,body {
 
 #navigation {
 	vertical-align: top;
-	padding-top: 25px;
+	padding-top: 35px;
 	display: inline-block;
 }
 
@@ -87,17 +95,39 @@ html,body {
 	background-position: center;
 }
 
-#support h1 {
+#home-content h1 {
 	font-size: 20px;
 }
 
-#support {
+#home-content {
 	padding-bottom: 20px;
 	margin: 0 auto;
 	color: white;
 	width: 70%;
 	text-align: justify;
 	line-height: 35px;
+}
+
+.fb-page {
+
+}
+
+#test {
+	width: 60%;
+	float: right;
+	display: inline-block;
+}
+
+#test-image {
+	width: 100%;
+	height: 245px;
+	background: url("images/windinaction.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+#test-deux {
+	width: 100%;
 }
 
 #footer { 
