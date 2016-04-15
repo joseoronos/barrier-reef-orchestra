@@ -3,10 +3,7 @@ html,body {
 	padding: 0;
 	height: 100%;
 	font-family: "Open Sans";
-}
-
-body {
-	font-size: 62.5%;
+	font-size: 80.5%;
 }
 
 ::selection {
