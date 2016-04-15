@@ -93,6 +93,8 @@ body {
 	background: url("images/stringswithRaymond.jpg");
 	background-size: cover;
 	background-position: center;
+	color: white;
+	text-align: center;
 }
 
 #home-content h1 {
@@ -113,7 +115,7 @@ body {
 }
 
 #test {
-	width: 60%;
+	width: 63%;
 	float: right;
 	display: inline-block;
 }
@@ -128,6 +130,25 @@ body {
 
 #test-deux {
 	width: 100%;
+}
+
+#news {
+	color: white;
+	margin: 0 auto;
+	width: 70%;
+}
+
+.news-section {
+	padding-bottom: 30px;
+}
+
+.news-section img {
+	width: 50%;
+}
+
+.news-section-desc {
+	float: right;
+	width: 48%;
 }
 
 #footer { 
