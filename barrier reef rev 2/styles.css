@@ -1,0 +1,180 @@
+/* Setting up grid */
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+/* For mobile phones*/
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+	.col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+	/* For desktop */
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+
+	[class*="col-"] {
+    	padding: 15px;
+	}
+
+	button {
+		display: none;
+	}
+
+	.header {
+		background: #3BAFDA;
+		text-align: center;
+		padding: 30px;
+	}
+
+	.company-name {
+		margin-top: 45px;
+		margin-right: 100px; 
+		vertical-align: top;
+		display: inline-block;
+	}
+
+	.company-logo {
+		display: inline;
+	}
+
+	.company-logo img {
+		width: 4em;
+	}
+
+	.nav {
+		margin-top: 50px;
+		margin-left: 100px; 
+		vertical-align: top;
+		display: inline-block;
+	}
+
+	.nav li {
+		padding-right: 20px;
+		display: inline;
+		list-style: none;
+	}
+
+	#cta {
+		width: 100%;
+		height: 550px;
+		background: url("images/stringswithRaymond.jpg");
+		background-size: cover;
+		background-position: center;
+	}
+
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+
+body {
+	background: #4FC1E9;;
+}
+
+img {
+	max-width: 100%;
+}
+
+/*Mobile phone design */
+@media only screen and (max-width: 768px) {
+	.header {
+		background: #3BAFDA;
+		text-align: center;
+		padding: 30px;
+	}
+
+	.company-name {
+		font-size: 62.5%;
+		display: inline-block;
+	}
+
+	.company-logo img {
+		width: 1em;
+	}
+
+	.nav {
+		width: 100%;
+		vertical-align: top;
+		display: inline-block;
+	}
+
+	.nav li {
+		padding-right: 20px;
+		display: inline;
+		list-style: none;
+	}
+
+	.dropbtn {
+	    background-color: rgb(140,193,82);;
+	    color: white;
+	    width: 50%;
+	    padding: 16px;
+	    font-size: 16px;
+	    border: none;
+	    cursor: pointer;
+	}
+
+	.nav {
+	    position: relative;
+	    display: inline-block;
+	}
+
+	.nav-content {
+	    display: none;
+	    position: relative;
+	    background-color: #f9f9f9;
+	    min-width: 160px;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	}
+
+	.nav-content a {
+	    color: black;
+	    padding: 12px 16px;
+	    text-decoration: none;
+	    display: block;
+	}
+
+	.nav-content a:hover {
+		background-color: #f1f1f1
+	}
+
+	.nav:hover .nav-content {
+	    display: block;
+	}
+
+	.nav:hover .dropbtn {
+	    background-color: #3e8e41;
+	}
+
+}
