@@ -14,7 +14,7 @@
 }
 
 body {
-	background: #4FC1E9;;
+	background: #4FC1E9;
 }
 
 img {
@@ -27,22 +27,7 @@ img {
     width: 100%;
 }
 
-@media only screen and (min-width: 600px) {
-	.col-m-1 {width: 8.33%;}
-    .col-m-2 {width: 16.66%;}
-    .col-m-3 {width: 25%;}
-    .col-m-4 {width: 33.33%;}
-    .col-m-5 {width: 41.66%;}
-    .col-m-6 {width: 50%;}
-    .col-m-7 {width: 58.33%;}
-    .col-m-8 {width: 66.66%;}
-    .col-m-9 {width: 75%;}
-    .col-m-10 {width: 83.33%;}
-    .col-m-11 {width: 91.66%;}
-    .col-m-12 {width: 100%;}
-}
-
-@media only screen and (min-width: 768px) {
+@media only screen  and (min-device-width : 1024px) {
 	/* For desktop */
 	.col-1 {width: 8.33%;}
 	.col-2 {width: 16.66%;}
@@ -120,7 +105,7 @@ img {
 }
 
 /*Mobile phone design */
-@media only screen and (max-width: 768px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 	html, body {
 		height: 100%;
 	}
@@ -154,7 +139,6 @@ img {
 	.company-logo img {
 		display: none;
 	}
-	
 
 	.nav {
 		margin-top: -30px;
@@ -207,7 +191,7 @@ img {
 
 	.cta-m {
 		width: 100%;
-		height: 20em;
+		height: 30em;
 		background: url("images/stringswithRaymond.jpg");
 		background-size: cover;
 	}
@@ -229,17 +213,36 @@ img {
 
 	.row {
 		line-height: 35px;
+		font-size: 62.5%;
+	}
+
+	.tablet-row {
+		width: 100%;
 	}
 
 	.home-row-1 {
 		padding-top: 20px;
-		padding-bottom: 20px;
-		font-size: 62.5%;
+		padding-bottom: 50px;
 		width: 90%;
 		margin: 0 auto;
 	}
 
+	.news-item {
+		width: 90%;
+		margin: 0 auto;
+		padding-bottom: 50px;
+	}
+
+	.news-item h2 {
+		font-weight: 300;
+	}
+
+	.news-item img {
+		margin-top: 10px;
+	}
+
 	.home-row-1 span {
+		font-style: italic;
 		font-size: 60%;
 	}
 
@@ -269,4 +272,178 @@ img {
 		color: white;
 	}
 
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+	/*tablet*/
+	html, body {
+		height: 100%;
+	}
+
+	.wrapper {
+		color: white;
+		min-height: 100%;
+		position: relative;
+	}
+
+	.header {
+		background: #3BAFDA;
+		padding: 30px;
+	}
+
+	.company-name {
+		font-size: 55%;
+		display: inline-block;
+	}
+
+	.company-name a:link {
+		color: white;
+		text-decoration: none;
+	}
+
+	.company-name a:visited {
+		color: white;
+	}
+
+	
+	.company-logo img {
+		display: none;
+	}
+
+	.nav {
+		margin-top: -30px;
+		float: right;
+		vertical-align: top;
+		position: relative;
+		display: inline;
+	}
+
+	.dropbtn {
+	    background-color: rgb(140,193,82);
+	    color: white;
+	    padding: 10px;
+	    font-size: 10px;
+	    border: none;
+	    cursor: pointer;
+	}
+
+	.nav li {
+		display: inline;
+		list-style: none;
+	}
+
+	.nav-content {
+		margin-left: -50px;
+		position: absolute;
+	    display: none;
+	    background-color: #f9f9f9;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	}
+
+	.nav-content a {
+	    color: black;
+	    padding: 12px 16px;
+	    text-decoration: none;
+	    display: block;
+	}
+
+	.nav-content a:hover {
+		background-color: #f1f1f1
+	}
+
+	.nav:hover .nav-content {
+	    display: block;
+	}
+
+	.nav:hover .dropbtn {
+	    background-color: #3e8e41;
+	}
+
+	.cta-m {
+		width: 100%;
+		height: 50em;
+		background: url("images/stringswithRaymond.jpg");
+		background-size: cover;
+	}
+
+	.page-marker {
+		width: 90%;
+		margin: 0 auto;
+		padding-top: 20px;
+		font-size: 62.5%;
+	}
+	
+	.page-marker h1 {
+		color: #3BAFDA;
+	}
+
+	.content {
+		padding-bottom: 30px;
+	}
+
+	.row {
+		line-height: 35px;
+		font-size: 70%;
+	}
+
+	.home-row-1 {
+		padding-top: 20px;
+		padding-bottom: 50px;
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.news-item {
+		width: 90%;
+		margin: 0 auto;
+		padding-bottom: 50px;
+	}
+
+	.news-item h2 {
+		font-weight: 300;
+	}
+
+	.news-item img {
+		margin-top: 10px;
+	}
+
+	.home-row-1 span {
+		font-style: italic;
+		font-size: 60%;
+	}
+
+	.tablet-row {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.fb-row {
+		float: left;
+		width: 50%;
+	}
+
+	.home-row-2 {
+		margin-left: 50%;
+	}
+	
+	.footer {
+		font-size: 60%; 
+		padding: 10px;
+		text-align: center;
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		background: rgb(140,193,82);
+		color: rgb(100,138,42);
+	}
+
+	.footer a:link {
+		color: white;
+		text-decoration: none;
+	}	
+
+	.footer a:visited {
+		color: white;
+	}
 }
