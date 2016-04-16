@@ -46,6 +46,12 @@ img {
     	padding: 15px;
 	}
 
+	.row:after {
+    	content: "";
+    	clear: both;
+    	display: block;
+	}
+
 	button {
 		display: none;
 	}
@@ -108,6 +114,10 @@ img {
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 	html, body {
 		height: 100%;
+	}
+
+	[class*="col-"] {
+    	width: 90%;
 	}
 
 	.wrapper {
@@ -211,9 +221,19 @@ img {
 		padding-bottom: 30px;
 	}
 
-	.row {
+	.row, .mobile-row {
 		line-height: 35px;
 		font-size: 62.5%;
+	}
+
+	.mobile-row {
+		margin: 0 auto;
+	}
+
+	.home-row-2 {
+		width: 100%;
+		padding-top: 20px;
+		padding-bottom: 20px;
 	}
 
 	.tablet-row {
@@ -222,6 +242,11 @@ img {
 
 	.home-row-1 {
 		padding-top: 20px;
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.home-row-3  {
 		padding-bottom: 50px;
 		width: 90%;
 		margin: 0 auto;
@@ -246,9 +271,8 @@ img {
 		font-size: 60%;
 	}
 
-	.fb-row {
+	.fb-page-mobile {
 		margin: 0 auto;
-		width: 90%;
 	}
 
 	.footer {
@@ -278,6 +302,15 @@ img {
 	/*tablet*/
 	html, body {
 		height: 100%;
+	}
+
+	.col-1 {width: 25%;}
+	.col-2 {width: 50%;}
+	.col-3 {width: 75%;}
+	.col-4 {width: 100%;}
+
+	[class*="col-"] {
+    	float: left;
 	}
 
 	.wrapper {
@@ -379,6 +412,7 @@ img {
 
 	.content {
 		padding-bottom: 30px;
+		overflow: auto;
 	}
 
 	.row {
@@ -386,11 +420,23 @@ img {
 		font-size: 70%;
 	}
 
+	.home-row-3 {
+		clear: left;
+		padding-top: 20px;
+		padding-bottom: 50px;
+		width: 90%;
+		margin: 0 auto;
+	}
+
 	.home-row-1 {
 		padding-top: 20px;
 		padding-bottom: 50px;
 		width: 90%;
 		margin: 0 auto;
+	}
+
+	.home-row-2 {
+		margin-left: 20px;
 	}
 
 	.news-item {
@@ -413,17 +459,10 @@ img {
 	}
 
 	.tablet-row {
+		line-height: 35px;
 		width: 90%;
 		margin: 0 auto;
-	}
-
-	.fb-row {
-		float: left;
-		width: 50%;
-	}
-
-	.home-row-2 {
-		margin-left: 50%;
+		font-size: 70%;
 	}
 	
 	.footer {
