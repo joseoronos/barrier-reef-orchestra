@@ -29,18 +29,18 @@ img {
 
 @media only screen  and (min-device-width : 1024px) {
 	/* For desktop */
-	.col-1 {width: 8.33%;}
-	.col-2 {width: 16.66%;}
-	.col-3 {width: 25%;}
-	.col-4 {width: 33.33%;}
-	.col-5 {width: 41.66%;}
-	.col-6 {width: 50%;}
-	.col-7 {width: 58.33%;}
-	.col-8 {width: 66.66%;}
-	.col-9 {width: 75%;}
-	.col-10 {width: 83.33%;}
-	.col-11 {width: 91.66%;}
-	.col-12 {width: 100%;}
+	.col-1-desktop {width: 8.33%;}
+	.col-2-desktop {width: 16.66%;}
+	.col-3-desktop {width: 25%;}
+	.col-4-desktop {width: 33.33%;}
+	.col-5-desktop {width: 41.66%;}
+	.col-6-desktop {width: 50%;}
+	.col-7-desktop {width: 58.33%;}
+	.col-8-desktop {width: 66.66%;}
+	.col-9-desktop {width: 75%;}
+	.col-10-desktop {width: 83.33%;}
+	.col-11-desktop {width: 91.66%;}
+	.col-12-desktop {width: 100%;}
 
 	[class*="col-"] {
     	padding: 15px;
@@ -53,6 +53,7 @@ img {
 	html, body {
 		padding: 0;
 		margin: 0;
+        height: 100%;
 		color: white;
 	}
 
@@ -63,11 +64,20 @@ img {
 	}
 
 	.company-name {
-		margin-top: 45px;
+		margin-top: 40px;
 		margin-right: 100px; 
 		vertical-align: top;
 		display: inline-block;
 	}
+    
+    .company-name a:link {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .company-name a:visited {
+        color: white;
+    }
 
 	.company-logo {
 		display: inline;
@@ -78,6 +88,7 @@ img {
 	}
 
 	.nav {
+        font-weight: 300;
 		margin-top: 50px;
 		margin-left: 100px; 
 		vertical-align: top;
@@ -89,6 +100,30 @@ img {
 		display: inline;
 		list-style: none;
 	}
+    
+    .nav li a:link {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .nav li a:visited {
+        color: white;
+    }
+    
+    .nav li a:hover {
+        text-decoration: underline;
+    }
+    
+    .wrapper {
+		color: white;
+		min-height: 100%;
+		position: relative;
+	}
+    
+    .content {
+        overflow: auto;
+        padding-bottom: 100px;
+    }
 
 	.cta-m {
 		display: none;
@@ -101,7 +136,83 @@ img {
 		background-size: cover;
 		background-position: center;
 	}
+    
+    .row {
+        line-height: 35px;
+    }
+    
+    .page-marker {
+        width: 90%;
+        padding-top: 10px;
+        margin: 0 auto;
+        font-size: 60%;
+        color: #3BAFDA;
+    }
+    
+    .home-row-1 {
+        width: 90%;
+        line-height: 45px;
+        margin: 0 auto;
+    }
+    
+    .home-row-1 span {
+        font-style: italic;
+        font-size: 60%;
+        font-weight: 300;
+    }
+    
+    .col-4-desktop {
+        margin: 0 auto;
+    }
+    
+    .tablet-row {
+        width: 90%;
+		margin: 0 auto;
+	}
 
+	.fb-row {
+		float: left;
+	}
+
+	.home-row-2 {
+		margin-left: 30%;
+	}
+    
+    .footer {
+		font-size: 60%; 
+		padding: 10px;
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		background: rgb(140,193,82);
+		color: rgb(100,138,42);
+	}
+    
+    .desktop-footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .desktop-footer-section {
+        vertical-align: top;
+        width: 200px;
+        display: inline-block;
+        line-height: 2em;
+        font-size: 2em;
+    }
+
+    .desktop-footer-section ul {
+        list-style: none;
+        font-size: 80%;
+    }
+    
+    .copyright {
+        display: none;
+    }
+    
 }
 
 /*Mobile phone design */
@@ -226,6 +337,13 @@ img {
 		width: 90%;
 		margin: 0 auto;
 	}
+    
+    .home-row-2 {
+		padding-top: 20px;
+		padding-bottom: 50px;
+		width: 90%;
+		margin: 0 auto;
+	}
 
 	.news-item {
 		width: 90%;
@@ -271,6 +389,10 @@ img {
 	.footer a:visited {
 		color: white;
 	}
+    
+    .desktop-footer {
+        display: none;
+    }
 
 }
 
