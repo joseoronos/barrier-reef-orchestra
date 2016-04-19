@@ -128,7 +128,7 @@ img {
     
     .content {
         overflow: auto;
-        padding-bottom: 100px;
+        padding-bottom: 290px;
     }
 
 	.cta-m {
@@ -141,7 +141,15 @@ img {
 		background: url("images/stringswithRaymond.jpg");
 		background-size: cover;
 		background-position: center;
+        text-align: center;
+        color: white;
 	}
+    
+    .cta-d h1 {
+        font-size: 5em;
+        padding-top: 150px;
+        text-shadow: 3px 3px black;
+    }
     
     .row {
         line-height: 35px;
@@ -184,6 +192,11 @@ img {
         line-height: 45px;
 		margin-left: 30%;
 	}
+    
+    .col-12-desktop {
+        display: block;
+        clear: both;
+    }
     
     .footer {
 		font-size: 60%; 
