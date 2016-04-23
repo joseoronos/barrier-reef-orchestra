@@ -239,6 +239,18 @@ img {
         line-height: 45px;
 	}
     
+     .home-row-3 a:link {
+        color: white;
+    }
+    
+    .home-row-3 a:visited {
+        color: white;
+    }
+    
+    .home-row-3 a:hover {
+        color: #3BAFDA;
+    }
+    
     .col-12-desktop {
         display: block;
         clear: both;
