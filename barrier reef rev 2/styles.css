@@ -236,10 +236,12 @@ img {
     }
     
     .home-row-3 {
+        text-align: center;
         line-height: 45px;
 	}
     
-     .home-row-3 a:link {
+    /*
+    .home-row-3 a:link {
         color: white;
     }
     
@@ -249,6 +251,20 @@ img {
     
     .home-row-3 a:hover {
         color: #3BAFDA;
+    }
+    */
+    
+    .form-row {
+        text-align: center;
+    }
+    
+    .home-form {
+        vertical-align: top;
+        background-color: #3BAFDA;
+    }
+    
+    .col-5-desktop {
+        display: inline-block;
     }
     
     .col-12-desktop {
