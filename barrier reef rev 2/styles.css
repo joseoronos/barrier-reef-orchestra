@@ -236,11 +236,9 @@ img {
     }
     
     .home-row-3 {
-        text-align: center;
         line-height: 45px;
 	}
     
-    /*
     .home-row-3 a:link {
         color: white;
     }
@@ -252,7 +250,6 @@ img {
     .home-row-3 a:hover {
         color: #3BAFDA;
     }
-    */
     
     .form-row {
         text-align: center;
@@ -270,6 +267,18 @@ img {
     .col-12-desktop {
         display: block;
         clear: both;
+    }
+    
+    .faq-row {
+        margin: 0 auto;
+    }
+    
+    .faq-row a:link {
+        color: white;
+    }
+    
+    .faq-row a:visited {
+        color: white;
     }
     
     .footer {
@@ -303,6 +312,19 @@ img {
         font-size: 80%;
     }
     
+    .desktop-footer-section a:link {
+        color: #5e8726;
+        text-decoration: none;
+    }
+    
+    .desktop-footer-section a:visited {
+        color: #5e8726;
+    }
+    
+    .desktop-footer-section a:hover {
+        text-decoration: underline;
+    }
+    
     .desktop-footer-section-copy {
         vertical-align: top;
         padding-top: 5px;
@@ -312,11 +334,23 @@ img {
         line-height: 2em;
         font-size: 1.5em;
     }
+    
+    .desktop-footer-section-copy a:link {
+        color: #5e8726;
+        text-decoration: none;
+    }
+    
+    .desktop-footer-section-copy a:visited {
+        color: #5e8726;
+    }
+    
+    .desktop-footer-section-copy a:hover {
+        text-decoration: underline;
+    }
 
     .copyright {
         display: none;
     }
-
 }
 
 /*Mobile phone design */
@@ -413,7 +447,34 @@ img {
 		height: 30em;
 		background: url("images/stringswithRaymond.jpg");
 		background-size: cover;
+        text-align: center;
 	}
+    
+    .cta-m h1 {
+        padding-top: 100px;
+        font-size: 3em;
+        text-shadow: 3px 3px black;
+    }
+    
+     .cta-m h2 {
+        font-size: 1em;
+        text-shadow: 3px 3px black;
+    }
+    
+    .cta-m a:link {
+        color: white;
+        padding: 10px;
+        outline: 3px solid white;
+        text-decoration: none;
+    }
+    
+    .cta-m a:visited {
+        color: white;
+    }
+    
+    .cta-m a:hover {
+        background: rgb(140,193,82);
+    }
 
 	.cta-d {
 		display: none;
