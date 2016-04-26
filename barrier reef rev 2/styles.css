@@ -263,6 +263,10 @@ img {
     .col-5-desktop {
         display: inline-block;
     }
+
+    .col-11-desktop {
+    	margin: 0 auto;
+    }
     
     .col-12-desktop {
         display: block;
