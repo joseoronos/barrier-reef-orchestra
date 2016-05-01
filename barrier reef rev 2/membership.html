@@ -48,10 +48,73 @@
 
     <div class="row">
         <div class="form col-11-desktop">
-            <label for="form1">Form 1</label>
-            <input type="text" name="form1"><br>
+            <h1>Membership Application</h1>
+            <div class="col-10-desktop">
+            <label for="renewal-or-new">1. Are you renewing your membership or applying for a new membership?</label>
+            <form name="renewal-or-new">
+                <input type="radio" value="male" name="re"> Male<br>
+                <input type="radio" value="female" name="re"> Female<br>
+            </form>
+             <script type="text/javascript">
+            var allRadios = document.getElementsByName('re');
+            var booRadio;
+            var x = 0;
+            for(x = 0; x < allRadios.length; x++){
+
+                allRadios[x].onclick = function() {
+                    if(booRadio == this){
+                        this.checked = false;
+                        booRadio = null;
+                    }else{
+                        booRadio = this;
+                    }
+                };
+            }
+            </script>
+            </div>
         </div>
     </div>
+
+     <div class="row">
+        <div class="form col-11-desktop">
+            <div class="col-10-desktop">
+            <label for="membership-type">2. Please select desired membership type: </label>
+            <form name="membership-type">
+                <input type="radio" value="adult" name="re"> Adult<br>
+                <input type="radio" value="family" name="re"> Family<br>
+                <input type="radio" value="Student" name="re"> Student<br>
+                <input type="radio" value="Concession" name="re"> Concession<br>
+            </form>
+             <script type="text/javascript">
+            var allRadios = document.getElementsByName('re');
+            var booRadio;
+            var x = 0;
+            for(x = 0; x < allRadios.length; x++){
+
+                allRadios[x].onclick = function() {
+                    if(booRadio == this){
+                        this.checked = false;
+                        booRadio = null;
+                    }else{
+                        booRadio = this;
+                    }
+                };
+            }
+            </script>
+            </div>
+            </div>
+    </div>
+
+    <div class="row">
+        <div class="form col-11-desktop">
+            <div class="col-10-desktop">
+            <label for="customer-number">3. Enter your student/concession number:  </label>
+            <form name="customer-number">
+                <input type="text">
+            </form>
+            </div>
+            </div>
+        </div>
 
 	</div><!--End of Content-->
 
@@ -63,7 +126,7 @@
                     <li><a href="#">Repertoire And Rules</a></li>
                     <li><a href="#">History</a></li>
                     <li><a href="#">Committee</a></li>
-                    <li><a href="#">Copyright</a></li>
+                    <li><a href="#">Legal Information</a></li>
                 </ul>
             </div>
             <div class="desktop-footer-section">
