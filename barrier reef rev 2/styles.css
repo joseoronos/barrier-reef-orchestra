@@ -1,11 +1,3 @@
-/* Setting up grid */
-/*
-.row:after {
-    content: "";
-    clear: both;
-    display: block;
-}
-*/
 * {
 	font-family: "Open Sans";
 	box-sizing: border-box;
